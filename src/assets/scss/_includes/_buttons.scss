@@ -1,0 +1,25 @@
+.theme_btn{
+	outline: none !important;
+	border: none;
+	padding: 45px 30px;
+	font-family: 'RobotoMedium';
+	font-size: 22px;	
+	transition: all 0.4s ease;
+	width: 400px;
+	&.gray{
+		background: $primary-gray;
+		color: $light-font-color;
+		&:hover{
+			background: darken($primary-gray, 15%)
+		}
+		&[disabled]{
+			background: lighten($primary-gray, 15%);
+		}
+	}
+}
+
+@media(max-width: 991px) {
+	.theme_btn{
+		width: 100%;
+	}
+}
